@@ -61,3 +61,32 @@ h1{
   margin-left: 6%;
   font-family: "Raleway", "sans-serif";
 }
+
+.aboutMe{
+    display: flex;
+    background-image: url(images/aboutMeBackground.jpg);
+    height: 100vh;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+#dogImg{
+  height: 70vh;
+  align-self: flex-end;
+  margin-bottom: 5%;
+}
+
+.aboutMe h2{
+  font-size: 70px;
+}
+
+.aboutMe-textbox{
+  background-color: rgba(241, 228, 241, 0.521);
+  height: 60vh;
+  width: 60%;
+  border-radius: 50%;
+  text-align: center;
+  align-self: flex-end;
+  margin-bottom: 5%;
+}
