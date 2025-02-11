@@ -27,6 +27,27 @@ p {
   padding:0;
 }
 
+nav{
+  position: fixed;
+  background-color: rgba(250, 227, 249, 0.555);
+  width: 100%;
+  padding: 0.5rem;
+  z-index: 2;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  justify-content: center;
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+}
+
 header{
     display: flex;
     background-image: url(images/HeaderBackground.jpg);
@@ -35,14 +56,14 @@ header{
 }
 
 header img{
-  border-radius: 10rem;
+  border-radius: 50%;
   align-self: center;
   margin-left: 7%;
   height: 70vh;
 }
 
 h1{
-    font-family: "Quicksand", sans-serif;
+    /* font-family: "Quicksand", sans-serif; */
     color: rgb(44, 41, 37);
     justify-self: center;
     font-size: 130px;
@@ -64,6 +85,7 @@ h1{
 
 .aboutMe{
     display: flex;
+    position: relative;
     background-image: url(images/aboutMeBackground.jpg);
     height: 100vh;
     background-size: cover;
@@ -75,10 +97,14 @@ h1{
   height: 70vh;
   align-self: flex-end;
   margin-bottom: 5%;
+  border-radius: 10%;
 }
 
 .aboutMe h2{
   font-size: 70px;
+  position: absolute;
+  top: 17%;
+  right: 40%;
 }
 
 .aboutMe-textbox{
@@ -89,4 +115,5 @@ h1{
   text-align: center;
   align-self: flex-end;
   margin-bottom: 5%;
+  margin-right: -8%;
 }
