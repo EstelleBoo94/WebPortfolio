@@ -194,6 +194,54 @@ h1{
   align-self: flex-end;
 }
 
+.projects{
+  display: flex;
+  position: relative;
+  background-image: url(images/projects-background.jpg);
+  height: 100vh;
+  background-size: cover;
+  z-index: -2;
+  margin-top: 1%;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 7%;
+}
+
+.projects::before{
+  content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M100,0 A100,100 0 0,0 0,100 L0,0 Z" fill="white"/></svg>') top/cover no-repeat;
+    z-index: -1;
+    transform: rotate(180deg);
+}
+
+.projects h2{
+  font-size: 70px;
+  position: absolute;
+  justify-self: center;
+  align-self: flex-start;
+  margin-top: 8%;
+  font-family: "Raleway", "sans-serif";
+}
+
+.project-card{
+  border: solid 1px rgba(0, 0, 0, 0.253);
+  border-radius: 5%;
+  font-family: "Raleway", "sans-serif";
+  width: 20%;
+  height: 55vh;
+  background-color: rgba(240, 248, 255, 0.521);
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.projects img{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
 footer{
   background-color: rgba(250, 227, 249, 0.555);
 }
