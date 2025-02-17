@@ -103,6 +103,7 @@ h1{
   margin-bottom: 5%;
   margin-left: 6%;
   font-family: "Raleway", "sans-serif";
+  text-align: center;
 }
 
 .aboutMe{
@@ -243,7 +244,10 @@ h1{
 }
 
 footer{
+  display: flex;
   background-color: rgba(250, 227, 249, 0.555);
+  font-family: "Raleway", "sans-serif";
+  justify-content: center;
 }
 
 
@@ -261,6 +265,51 @@ footer{
     margin: 5%;
   }
   .header-textbox{
+    align-self: center;
+  }
+
+  .aboutMe{
+    flex-direction: column;
+  }
+
+  .aboutMe h2{
+    position: static;
+    align-self: center;
+  }
+
+  .aboutMe-textbox{
+    align-self: center;
+  }
+
+  #dogImg{
+    align-self: center; 
+    height: 40vh;
+    margin-top: -15%;
+  };
+
+  .skills{
+    flex-direction: column;
+  }
+
+  .skills h2{
+    position: static;
+    align-self: center;
+  }
+
+  .skills-textbox{
+    align-self: center;
+  }
+
+  .projects{
+    flex-direction: column;
+  }
+
+  .projects h2{
+    position: static;
+    align-self: center;
+  }
+
+  .project-card{
     align-self: center;
   }
 }
