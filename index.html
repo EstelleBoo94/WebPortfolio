@@ -12,7 +12,7 @@
 </head>
 <body>
     <nav>
-        <a href="#logo" class="logo"><img src="images/logo (2).png" alt="Logo E.Boo"></a>
+        <a href="#home" class="logo"><img src="images/logo (2).png" alt="Logo E.Boo"></a>
         <ul>
             <li><a href="#aboutMe"><i class="fa-regular fa-face-smile"></i> Om mig</a></li>
             <li><a href="#contact"><i class="fa-regular fa-envelope"></i> Kontakt</a></li>
@@ -21,13 +21,13 @@
         </ul>
     </nav>
 
-    <header>
+    <header id="home">
         <img src="images/profil1.jpg" alt="Estelle Boo">
         <h1>ESTELLE BOO</h1>
         <div class="header-textbox">välkommen</div>
     </header>
 
-    <div class="aboutMe">
+    <div class="aboutMe" id="aboutMe">
         <h2>Om mig</h2>
         <div class="aboutMe-textbox">text om mig</div>
         <img src="images/placeholderDog.jpg" alt="Leia the Dog" id="dogImg">
@@ -46,15 +46,52 @@
         </div>
         <div class="project-card"> 
             <img src="images/project-card.jpg" alt="projects image">
-            projekt</div>
+            projekt
+        </div>
         <div class="project-card"> 
             <img src="images/project-card.jpg" alt="projects image">
-            projekt</div>
+            projekt
+        </div>
+    </div>
+
+    <div class="references">
+        <h2>referenser</h2>
+        <div class="reference-card"> 
+            <img src="images/project-card.jpg" alt="projects image">
+            referens
+        </div>
+        <div class="reference-card"> 
+            <img src="images/project-card.jpg" alt="projects image">
+            referens
+        </div>
+        <div class="reference-card"> 
+            <img src="images/project-card.jpg" alt="projects image">
+            referens
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <h2>Kontakta mig!</h2>
+        <div class="contact-box">
+            <form action="https://api.web3forms.com/submit" method="post">
+                <input type="hidden" name="access_key" value="41320207-6866-43a7-9b53-ba3328842c0d" />
+                <label for="fname">*Förnamn:</label><br>
+                <input type="text" id="fname" name="fname" required><br>
+
+                <label for="lname">*Efternamn:</label><br>
+                <input type="text" id="lname" name="lname" required><br>
+
+                <label for="email">*Email:</label><br>
+                <input type="text" id="email" name="email" required><br>
+
+                <input type="submit" value="Skicka">
+            </form>
+        </div>
     </div>
 
     <footer>footer 
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-linkedin"></i>
+        <a href="https://github.com/EstelleBoo94" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://se.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
     </footer>
 </body>
 </html>

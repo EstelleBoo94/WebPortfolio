@@ -41,13 +41,21 @@ nav ul{
   gap: 30px;
   float: right;
   margin-right: 5%;
+  margin-top: 0%;
 }
 
 nav a{
   text-decoration: none;
   color: black;
   font-family: "Raleway", "sans-serif";
+}
 
+nav li{
+  padding: 10px;
+}
+
+nav li:hover{
+  background-color: rgba(250, 227, 249, 0.863);;
 }
 
 nav img{
@@ -55,11 +63,6 @@ nav img{
   height: 13vh;
   margin-left: 5%;
 }
-/* .logo{
-  font-family: "Charm", sans-serif;
-  font-size: 50px;
-  margin-left: 5%;
-} */
 
 header{
     display: flex;
@@ -249,11 +252,111 @@ h1{
   border-top-right-radius: 15px;
 }
 
+.references{
+  display: flex;
+  position: relative;
+  background-image: url(images/references-background.jpg);
+  height: 100vh;
+  background-size: cover;
+  z-index: -2;
+  margin-top: 1%;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 7%;
+}
+
+.references::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M100,0 A100,100 0 0,0 0,100 L0,0 Z" fill="white"/></svg>') top/cover no-repeat;
+  z-index: -1;
+}
+
+.references h2{
+  font-size: 70px;
+  position: absolute;
+  justify-self: center;
+  align-self: flex-start;
+  margin-top: 8%;
+  font-family: "Raleway", "sans-serif";
+}
+
+.reference-card{
+  border: solid 1px rgba(0, 0, 0, 0.253);
+  border-radius: 5%;
+  font-family: "Raleway", "sans-serif";
+  width: 20%;
+  height: 55vh;
+  background-color: rgba(240, 248, 255, 0.521);
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.references img{
+  border-radius: 50%;
+  width: 70%;
+  justify-self: center;
+  margin-top: 3%;
+}
+
+.contact{
+  display: flex;
+  position: relative;
+  background-image: url(images/contact-img.jpg);
+  height: 100vh;
+  background-size: cover;
+  z-index: -2;
+  margin-top: 1%;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact::before{
+  content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M100,0 A100,100 0 0,0 0,100 L0,0 Z" fill="white"/></svg>') top/cover no-repeat;
+    z-index: -1;
+    transform: rotate(180deg);
+}
+
+.contact h2{
+  font-size: 70px;
+  position: absolute;
+  justify-self: center;
+  align-self: flex-start;
+  margin-top: 8%;
+  font-family: "Raleway", "sans-serif";
+}
+
+.contact-box{
+  background-color: rgba(240, 248, 255, 0.521);
+  height: 60vh;
+  width: 60%;
+  text-align: center;
+  margin-bottom: 5%;
+  font-family: "Raleway", "sans-serif";
+  align-self: flex-end;
+}
+
+
 footer{
   display: flex;
+  height: 6rem;
   background-color: rgba(250, 227, 249, 0.555);
   font-family: "Raleway", "sans-serif";
   justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+footer a{
+  text-decoration: none;
+  color: black;
+  font-size: xx-large;
 }
 
 
