@@ -17,9 +17,18 @@
             <li><a href="#aboutMe"><i class="fa-regular fa-face-smile"></i> Om mig</a></li>
             <li><a href="#contact"><i class="fa-regular fa-envelope"></i> Kontakt</a></li>
             <li><a href="#cv"><i class="fa-solid fa-download"></i> CV</a></li>
-            <li><a href="#menu"><i class="fa-solid fa-bars"></i></a></li>
+            <li><a href="#menu" id="menu-toggle"><i class="fa-solid fa-bars"></i></a></li>
         </ul>
     </nav>
+
+    <ul id="menu" class="menu hidden">
+        <li><a href="#home">Hem</a></li>
+        <li><a href="#aboutMe">Om mig</a></li>
+        <li><a href="#skills">Kunskaper</a></li>
+        <li><a href="#projects">Projekt</a></li>
+        <li><a href="#references">Referenser</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+    </ul>
 
     <header id="home">
         <img src="images/profil1.jpg" alt="Estelle Boo">
@@ -36,7 +45,7 @@
         <img src="images/Leia.jpg" alt="Leia the Dog" id="dogImg">
     </div>
 
-    <div class="skills">
+    <div class="skills" id="skills">
         <h2>Mina kunskaper</h2>
         <div class="skills-textbox">
             <img src="images/c-logo.png" alt="C#-logo" class="skill-logo">
@@ -48,7 +57,7 @@
     </div>
 
     <!-- Button bottom -->
-    <div class="projects"> 
+    <div class="projects" id="projects"> 
         <h2>Projekt</h2>
         <div class="project-card"> 
             <img src="images/Zoo.png" alt="Zoo image">
@@ -71,7 +80,7 @@
         </div>
     </div>
 
-    <div class="references">
+    <div class="references" id="references">
         <h2>Referenser</h2>
         <div class="reference-card"> 
             <img src="images/reference-placeholder.jpg" alt="projects image">
@@ -119,9 +128,13 @@
         </div>
     </div>
 
-    <footer>footer 
+    <footer>
+        <p>Estelle Boo 2025</p> 
         <a href="https://github.com/EstelleBoo94" target="_blank"><i class="fa-brands fa-github"></i></a>
         <a href="https://se.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        här ska vädret finnas
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
