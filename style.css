@@ -421,20 +421,30 @@ footer a{
     flex-direction: column;
   }
   header img{
-    height: 40vh;
+    height: 35vh;
     margin-top: 6%;
+    margin-left: 0px;
   }
   h1{
-    font-size: 75px;
+    font-size: 105px;
     align-self: center;
     margin: 5%;
+    margin-bottom: 0px;
   }
+
+  .last-name{
+    margin: 0px;
+  }
+
   .header-textbox{
     align-self: center;
+    margin-right: 0px;
+    width: 70%;
   }
 
   .aboutMe{
     flex-direction: column;
+    height: auto;
   }
 
   .aboutMe h2{
@@ -444,29 +454,45 @@ footer a{
 
   .aboutMe-textbox{
     align-self: center;
+    height: auto;
+    margin-bottom: 10px;
+    width: 70%;
+  }
+
+  .me{
+    margin: 20px;
   }
 
   #dogImg{
     align-self: center; 
     height: 40vh;
-    margin-top: -15%;
+    margin-bottom: 30px
   };
 
   .skills{
     flex-direction: column;
+    height: auto;
   }
 
   .skills h2{
-    position: static;
-    align-self: center;
+    display: flex;
   }
 
   .skills-textbox{
     align-self: center;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 0px;
+  }
+
+  .skill-logo{
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   .projects{
     flex-direction: column;
+    height: auto;
   }
 
   .projects h2{
@@ -476,5 +502,52 @@ footer a{
 
   .project-card{
     align-self: center;
+    width: 70%;
+    height: auto;
+  }
+
+  h3{
+    font-size: 23px;
+  }
+
+  p{
+    font-size: 23px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .button{
+    margin: 20px;
+    padding: 4%;
+    font-size: 20px;
+  }
+
+  .references{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .references h2{
+    position: static;
+    align-self: center;
+  }
+
+  .reference-card{
+    align-self: center;
+    width: 70%;
+    height: auto;
+  }
+
+  .references img{
+    width: 40%;
+  }
+
+  .citing{
+    margin-bottom: 20px;
+  }
+
+  .contact-box{
+    align-self: center;
+    width: 70%;
   }
 }
