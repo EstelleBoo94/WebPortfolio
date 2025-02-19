@@ -97,17 +97,24 @@
         <h2>Kontakta mig!</h2>
         <div class="contact-box">
             <form action="https://api.web3forms.com/submit" method="post">
-                <input type="hidden" name="access_key" value="41320207-6866-43a7-9b53-ba3328842c0d" />
-                <label for="fname">*Förnamn:</label><br>
-                <input type="text" id="fname" name="fname" required><br>
+                <div>
+                    <input type="hidden" name="access_key" value="41320207-6866-43a7-9b53-ba3328842c0d" />
+                    <label for="fname" class="label">Förnamn:</label><br>
+                    <input type="text" id="fname" name="fname" class="field" placeholder="Förnamn" required><br>
 
-                <label for="lname">*Efternamn:</label><br>
-                <input type="text" id="lname" name="lname" required><br>
+                    <label for="lname" class="label">Efternamn:</label><br>
+                    <input type="text" id="lname" name="lname" class="field" placeholder="Efternamn" required><br>
 
-                <label for="email">*Email:</label><br>
-                <input type="text" id="email" name="email" required><br>
+                    <label for="email" class="label">Email:</label><br>
+                    <input type="email" id="email" name="email" class="field" placeholder="E-postadress" required><br>
+                </div>
 
-                <input type="submit" value="Skicka">
+                <div>
+                    <label for="message" class="label">Meddelande:</label><br>
+                    <textarea id="message" name="message" class="message" placeholder="Skriv ditt meddelande..." rows="10" required></textarea><br>
+                </div>
+
+                <input type="submit" value="Skicka" class="button-contact">
             </form>
         </div>
     </div>
