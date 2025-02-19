@@ -39,7 +39,7 @@ p{
 
 nav{
   position: fixed;
-  background-color: rgba(250, 227, 249, 0.555);
+  background-color: rgba(250, 227, 249, 0.884);
   width: 100%;
   z-index: 2;
   height: 3rem;
@@ -58,10 +58,11 @@ nav a{
   text-decoration: none;
   color: black;
   font-family: "Raleway", "sans-serif";
+  font-size: 18px;
 }
 
 nav li{
-  padding: 11px;
+  padding: 10px;
 }
 
 nav li:hover{
@@ -73,6 +74,38 @@ nav img{
   height: 13vh;
   margin-left: 5%;
 }
+
+
+.menu.hidden {
+  display: none;
+}
+.menu {
+  background: rgba(250, 227, 249, 0.884);
+  padding: 10px;
+  position: absolute;
+  position: fixed;
+  right: 0px;
+  width: 20%;
+  z-index: 2;
+  list-style: none;
+  top: 3rem;
+  margin: 0%;
+}
+.menu a{
+  text-decoration: none;
+  color: black;
+  font-family: "Raleway", "sans-serif";
+  font-size: 18px;
+}
+.menu li{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+}
+.menu li:hover{
+  background-color: rgb(241, 166, 205);
+}
+
 
 header{
     display: flex;
@@ -121,7 +154,7 @@ h1{
   background-color: rgba(240, 248, 255, 0.521);
   align-self: flex-end;
   height: 25vh;
-  width: 25%;
+  width: 500px;
   margin-bottom: 7%;
   font-family: "Raleway", "sans-serif";
   text-align: center;
@@ -459,7 +492,7 @@ form{
 footer{
   display: flex;
   height: 6rem;
-  background-color: rgba(250, 227, 249, 0.555);
+  background-color: rgba(250, 227, 249, 0.884);
   font-family: "Raleway", "sans-serif";
   justify-content: center;
   gap: 30px;
