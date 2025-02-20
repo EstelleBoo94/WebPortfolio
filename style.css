@@ -603,6 +603,14 @@ footer a{
   font-size: xx-large;
 }
 
+#weather-data{
+  display: flex;
+}
+
+.footer-weather-icon{
+  margin: auto 0.3em auto auto;
+  font-size: 2em;
+}
 
 @media (max-width: 768px){
   header{
