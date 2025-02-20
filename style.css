@@ -50,18 +50,16 @@ nav ul{
   display: inline-flex;
   gap: 30px;
   float: right;
-  margin-right: 5%;
+  margin-right: 50px;
   margin-top: 0%;
 }
 
 nav a{
+  display: inline-block;
   text-decoration: none;
   color: black;
   font-family: "Raleway", "sans-serif";
   font-size: 18px;
-}
-
-nav li{
   padding: 10px;
 }
 
@@ -72,7 +70,7 @@ nav li:hover{
 nav img{
   float: left;
   height: 13vh;
-  margin-left: 5%;
+  margin-left: 50px;
 }
 
 
@@ -82,7 +80,6 @@ nav img{
 .menu {
   background: rgba(250, 227, 249, 0.884);
   padding: 10px;
-  position: absolute;
   position: fixed;
   right: 0px;
   width: 20%;
@@ -92,6 +89,7 @@ nav img{
   margin: 0%;
 }
 .menu a{
+  display: block;
   text-decoration: none;
   color: black;
   font-family: "Raleway", "sans-serif";
@@ -459,6 +457,7 @@ form{
 .button-contact:hover{
   background-color: rgb(241, 166, 205);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .field{
@@ -487,6 +486,68 @@ form{
 
 .label{
   font-size: 23px;
+}
+
+.thank-you{
+  display: flex;
+  position: relative;
+  background-image: url(images/FormSubmitted-background.jpg);
+  height: 100vh;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.thank-you::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M100,0 A100,100 0 0,0 0,100 L0,0 Z" fill="white"/></svg>') top/cover no-repeat;
+  z-index: -1;
+  transform: rotate(180deg);
+}
+
+.thank-you h2{
+  font-size: 70px;
+  position: absolute;
+  justify-self: center;
+  align-self: flex-start;
+  margin-top: 5%;
+  font-family: "Raleway", "sans-serif";
+}
+
+.thank-textbox{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(240, 248, 255, 0.521);
+  height: 40vh;
+  width: 40%;
+  text-align: center;
+  font-family: "Raleway", "sans-serif";
+  justify-content: center;
+  align-items: center;
+}
+
+.thank-textbox p{
+  font-size: 25px;
+}
+
+.button-thank{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: rgb(243,130,188);
+  padding: 2%;
+  width: 25%;
+  border-radius: 10px;
+  margin-top: 70px;
+}
+.button-thank:hover{
+  background-color: rgb(241, 166, 205);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 footer{
