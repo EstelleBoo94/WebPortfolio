@@ -73,7 +73,6 @@ nav img{
   margin-left: 50px;
 }
 
-
 .menu.hidden {
   display: none;
 }
@@ -103,7 +102,6 @@ nav img{
 .menu li:hover{
   background-color: rgb(241, 166, 205);
 }
-
 
 header{
     display: flex;
@@ -302,6 +300,8 @@ h1{
   margin-bottom: 5%;
   text-align: center;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
 }
 
 .projects img{
@@ -309,23 +309,55 @@ h1{
   border-top-right-radius: 15px;
 }
 
+.project-text{
+  padding: 0 0.8em;
+}
+
+.project-button{
+  margin: auto;
+}
+
+.project-button-top{
+  margin: auto auto 0.5em auto;
+}
+
+.project-button-bottom{
+  margin: 0.5em auto auto auto;
+}
+
 .button{
-  display: flex;
-  text-decoration: none;
-  justify-self: center;
+  border: none;
   color: black;
+  background-image: linear-gradient(30deg, rgb(243,130,188), rgb(247, 212, 230));
+  border-radius: 20px;
+  background-size: 100% auto;
+  font-family: "Raleway", "sans-serif";
+  font-size: 17px;
+  padding: 0.6em 1.5em;
+  text-decoration: none;
   font-weight: 500;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  background-color: rgb(243,130,188);
-  padding: 4%;
-  border-radius: 10px;
-  margin: 10px;
 }
 
 .button:hover{
-  background-color: rgb(241, 166, 205);
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  background-position: right center;
+ background-size: 200% auto;
+ -webkit-animation: pulse 2s infinite;
+ animation: pulse512 1.5s infinite;
 }
+@keyframes pulse512 {
+  0% {
+   box-shadow: 0 0 0 0 rgb(238, 161, 201);
+  }
+ 
+  70% {
+   box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+ 
+  100% {
+   box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+ }
 
 input {
   all: unset;
@@ -384,6 +416,7 @@ input {
   font-family: "Raleway", "sans-serif";
   font-style: italic;
   margin-top: 20px;
+  padding: 0 0.8em;
 }
 
 .name{
@@ -433,7 +466,7 @@ input {
   align-self: flex-end;
 }
 
-form{
+.form-text-input{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -482,6 +515,10 @@ form{
   font-family: "Raleway", "sans-serif";
   font-size: 18px;
   width: 400px;
+}
+
+.form-button{
+  margin-top: 2em;
 }
 
 .label{
@@ -700,5 +737,17 @@ footer a{
   .contact-box{
     align-self: center;
     width: 70%;
+  }
+
+  .field{
+    width: 55vw;
+  }
+
+  .message{
+    width: 50vw;
+  }
+
+  .form-button{
+    padding: 0.6em 1.5em;
   }
 }

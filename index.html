@@ -61,22 +61,28 @@
         <h2>Projekt</h2>
         <div class="project-card"> 
             <img src="images/Zoo.png" alt="Zoo image">
-            <h3>Djurgläntan Zoo</h3>
-            <p>Det här är min första hemsida, gjord med HTML och CSS. Detta var en skoluppgift där vi skulle skapa en hemsida till ett påhittat Zoo.</p>
-            <a href="https://github.com/EstelleBoo94/Zoo" target="_blank" class="button">GitHub</a>
-            <a href="https://estelleboo94.github.io/Zoo/" target="_blank" class="button">Live Demo</a>
+            <div class="project-text">
+                <h3>Djurgläntan Zoo</h3>
+                <p>Det här är min första hemsida, gjord med HTML och CSS. Detta var en skoluppgift där vi skulle skapa en hemsida till ett påhittat Zoo.</p>
+            </div>
+            <a href="https://github.com/EstelleBoo94/Zoo" target="_blank" class="button project-button-top">GitHub</a>
+            <a href="https://estelleboo94.github.io/Zoo/" target="_blank" class="button project-button-bottom">Live Demo</a>
         </div>
         <div class="project-card"> 
             <img src="images/project-card.jpg" alt="projects image">
-            <h3>Projekt</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nostrum illum aut non, nemo dignissimos tempora molestias, delectus iste architecto commodi sequi reiciendis illo odit corporis maiores eos reprehenderit ullam?</p>
-            <a href="https://github.com/EstelleBoo94" target="_blank" class="button">GitHub</a>
+            <div class="project-text">
+                <h3>Projekt</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nostrum illum aut non, nemo dignissimos tempora molestias, delectus iste architecto commodi sequi reiciendis illo odit corporis maiores eos reprehenderit ullam?</p>
+            </div>
+            <a href="https://github.com/EstelleBoo94" target="_blank" class="button project-button">GitHub</a>
         </div>
         <div class="project-card"> 
             <img src="images/project-card.jpg" alt="projects image">
-            <h3>Projekt</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit accusantium, quis qui veniam quia odit, velit ea magnam deserunt autem porro aperiam blanditiis nisi itaque hic fugit esse voluptate natus.</p>
-            <a href="https://github.com/EstelleBoo94" target="_blank" class="button">GitHub</a>
+            <div class="project-text">
+                <h3>Projekt</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit accusantium, quis qui veniam quia odit, velit ea magnam deserunt autem porro aperiam blanditiis nisi itaque hic fugit esse voluptate natus.</p>
+            </div>
+            <a href="https://github.com/EstelleBoo94" target="_blank" class="button project-button">GitHub</a>
         </div>
     </div>
 
@@ -106,24 +112,26 @@
         <h2>Kontakta mig!</h2>
         <div class="contact-box">
             <form action="https://api.web3forms.com/submit" method="post">
-                <div>
-                    <input type="hidden" name="access_key" value="41320207-6866-43a7-9b53-ba3328842c0d" />
-                    <label for="fname" class="label">Förnamn:</label><br>
-                    <input type="text" id="fname" name="fname" class="field" placeholder="Förnamn" required><br>
-
-                    <label for="lname" class="label">Efternamn:</label><br>
-                    <input type="text" id="lname" name="lname" class="field" placeholder="Efternamn" required><br>
-
-                    <label for="email" class="label">Email:</label><br>
-                    <input type="email" id="email" name="email" class="field" placeholder="E-postadress" required><br>
+                <div class="form-text-input">
+                    <div>
+                        <input type="hidden" name="access_key" value="41320207-6866-43a7-9b53-ba3328842c0d" />
+                        <label for="fname" class="label">Förnamn:</label><br>
+                        <input type="text" id="fname" name="fname" class="field" placeholder="Förnamn" required><br>
+    
+                        <label for="lname" class="label">Efternamn:</label><br>
+                        <input type="text" id="lname" name="lname" class="field" placeholder="Efternamn" required><br>
+    
+                        <label for="email" class="label">Email:</label><br>
+                        <input type="email" id="email" name="email" class="field" placeholder="E-postadress" required><br>
+                    </div>
+    
+                    <div>
+                        <label for="message" class="label">Meddelande:</label><br>
+                        <textarea id="message" name="message" class="message" placeholder="Skriv ditt meddelande..." rows="10" required></textarea><br>
+                    </div>
                 </div>
 
-                <div>
-                    <label for="message" class="label">Meddelande:</label><br>
-                    <textarea id="message" name="message" class="message" placeholder="Skriv ditt meddelande..." rows="10" required></textarea><br>
-                </div>
-
-                <input type="submit" value="Skicka" class="button-contact">
+                <input type="submit" value="Skicka" class="button form-button">
                 <input type="hidden" name="redirect" value="http://127.0.0.1:5500/formSubmitted.html">
             </form>
         </div>
