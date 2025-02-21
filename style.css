@@ -634,7 +634,7 @@ footer a{
   }
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1280px){
   header{
     flex-direction: column;
   }
@@ -660,8 +660,26 @@ footer a{
     width: 60%;
   }
 
+  .me{
+    font-size: 20px;
+  }
+
   .skills-textbox{
     flex-wrap: wrap;
+  }
+
+  .project-card{
+    height: 60vh;
+  }
+
+  .reference-card{
+    height: auto;
+  }
+
+  .contact-box{
+    height: auto;
+    margin-top: 15%;
+    margin-bottom: 5%;
   }
 
 }
@@ -810,8 +828,6 @@ footer a{
   .contact-box{
     align-self: center;
     width: 70%;
-    height: auto;
-    margin-top: 15%;
   }
 
   .field{
