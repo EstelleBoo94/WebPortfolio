@@ -1,15 +1,38 @@
 document.getElementById("menu-toggle").addEventListener("click", function (event) {
     event.preventDefault();
     document.getElementById("menu").classList.toggle("hidden");
+
+    const menuIcon = this.querySelector("i");
+    const navItems = document.getElementsByClassName("nav-items");
+
+    if (menu.classList.contains("hidden")){
+        menuIcon.classList.remove("fa-xmark");
+        menuIcon.classList.add("fa-bars");
+    }
+    else{
+        menuIcon.classList.remove("fa-bars");
+        menuIcon.classList.add("fa-xmark");
+    }
+
+    for (let i = 0; i < navItems.length; i++) {
+        navItems[i].classList.toggle("hidden");
+    }
 });
 
 document.addEventListener("click", function(event) {
-    var menu = document.getElementById("menu");
-    var menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+    const menuToggle = document.getElementById("menu-toggle");
+    const menuIcon = document.getElementById("menuIcon");
+    const navItems = document.getElementsByClassName("nav-items");
     
     if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
         if (!menu.classList.contains("hidden")) {
             menu.classList.add("hidden");
+            menuIcon.classList.remove("fa-xmark");
+            menuIcon.classList.add("fa-bars");
+        }
+        for (let i = 0; i < navItems.length; i++) {
+            navItems[i].classList.toggle("hidden");
         }
     }
 });
@@ -57,7 +80,3 @@ fetch("https://api.open-meteo.com/v1/forecast?latitude=62.3913&longitude=17.3063
 .catch(error => {
     return console.log("fel inträffat", error)
 })
-
-// data.current.temperature_2m
-// data.current.weather_code
-// data.current.apparent_temperature

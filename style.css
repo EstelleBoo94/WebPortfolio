@@ -73,6 +73,10 @@ nav img{
   margin-left: 50px;
 }
 
+.nav-items.hidden{
+  display: none;
+}
+
 .menu.hidden {
   display: none;
 }
@@ -660,6 +664,10 @@ footer a{
     width: 60%;
   }
 
+  .aboutMe h2{
+    margin-top: 2%;
+  }
+
   .me{
     font-size: 20px;
   }
@@ -685,6 +693,11 @@ footer a{
 }
 
 @media (max-width: 768px){
+
+  .nav-items{
+    display: none;
+  }
+
   header{
     flex-direction: column;
   }
@@ -865,8 +878,19 @@ footer a{
 }
 
 @media (max-width: 375px){
+  nav{
+    display: flex;
+    justify-content: center;
+  }
+
+  nav img{
+    position: absolute;
+    margin: 0px;
+    left: 10px;
+  }
+
   h1{
-    font-size: 95px;
+    font-size: 75px;
   }
 
   .skills h2{
