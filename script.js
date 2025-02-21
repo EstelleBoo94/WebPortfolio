@@ -31,6 +31,22 @@ fetch("https://api.open-meteo.com/v1/forecast?latitude=62.3913&longitude=17.3063
     if(data.current.weather_code == 2 || data.current.weather_code == 3){
         icon.classList.add("fa-solid", "fa-cloud", "footer-weather-icon")
     }
+
+    else if(data.current.weather_code == 0 || data.current.weather_code == 1){
+        icon.classList.add("fa-solid", "fa-sun", "footer-weather-icon")
+    }
+
+    else if(data.current.weather_code == 61 || data.current.weather_code == 63 || data.current.weather_code == 65 || data.current.weather_code == 81 || data.current.weather_code == 82 || data.current.weather_code == 85){
+        icon.classList.add("fa-solid", "fa-umbrella", "footer-weather-icon")
+    }
+
+    else if(data.current.weather_code == 71 || data.current.weather_code == 73 || data.current.weather_code == 75 || data.current.weather_code == 77 || data.current.weather_code == 85 || data.current.weather_code == 86){
+        icon.classList.add("fa-solid", "fa-snowflake", "footer-weather-icon")
+    }
+
+    else{
+        icon.classList.add("fa-solid", "fa-temperature-full", "footer-weather-icon")
+    }
     
     const ptag = document.createElement("p");
     ptag.textContent = `${data.current.temperature_2m}°C | känns som ${data.current.apparent_temperature}°C`
