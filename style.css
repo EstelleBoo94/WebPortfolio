@@ -151,6 +151,8 @@ h1{
 }
 
 .header-textbox{
+  display: flex;
+  flex-direction: column;
   background-color: rgba(240, 248, 255, 0.521);
   align-self: flex-end;
   height: 25vh;
@@ -159,6 +161,22 @@ h1{
   font-family: "Raleway", "sans-serif";
   text-align: center;
   margin-right: 5%;
+  justify-content: center;
+  gap: 15px;
+}
+
+header h3{
+  font-size: 23px;
+}
+header p{
+  font-size: 20px;
+  padding: 0px 5px;
+}
+
+header a{
+  align-self: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .aboutMe{
@@ -641,6 +659,7 @@ footer a{
 @media (max-width: 1280px){
   header{
     flex-direction: column;
+    height: auto;
   }
   header img{
     height: 35vh;
@@ -721,6 +740,7 @@ footer a{
     align-self: center;
     margin-right: 0px;
     width: 70%;
+    height: auto;
   }
 
   .aboutMe{
@@ -894,6 +914,18 @@ footer a{
   }
 
   .skills h2{
-    font-size: 45px;
+    font-size: 40px;
+  }
+
+  .contact h2{
+    font-size: 40px;
+  }
+
+  .thank-you h2{
+    font-size: 40px;
+  }
+
+  .thank-textbox{
+    width: auto;
   }
 }

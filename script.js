@@ -30,10 +30,12 @@ document.addEventListener("click", function(event) {
             menu.classList.add("hidden");
             menuIcon.classList.remove("fa-xmark");
             menuIcon.classList.add("fa-bars");
+
+            for (let i = 0; i < navItems.length; i++) {
+                navItems[i].classList.toggle("hidden");
+            }
         }
-        for (let i = 0; i < navItems.length; i++) {
-            navItems[i].classList.toggle("hidden");
-        }
+        
     }
 });
 
