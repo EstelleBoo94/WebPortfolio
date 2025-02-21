@@ -528,6 +528,7 @@ input {
 
 .thank-you{
   display: flex;
+  flex-direction: column;
   position: relative;
   background-image: url(images/FormSubmitted-background.jpg);
   height: 100vh;
@@ -549,11 +550,9 @@ input {
 
 .thank-you h2{
   font-size: 70px;
-  position: absolute;
   justify-self: center;
-  align-self: flex-start;
-  margin-top: 5%;
   font-family: "Raleway", "sans-serif";
+  text-align: center;
 }
 
 .thank-textbox{
@@ -660,6 +659,11 @@ footer a{
     margin-right: 0px;
     width: 60%;
   }
+
+  .skills-textbox{
+    flex-wrap: wrap;
+  }
+
 }
 
 @media (max-width: 768px){
@@ -696,6 +700,7 @@ footer a{
   .aboutMe h2{
     position: static;
     align-self: center;
+    font-size: 50px;
   }
 
   .aboutMe-textbox{
@@ -722,6 +727,7 @@ footer a{
 
   .skills h2{
     display: flex;
+    font-size: 50px;
   }
 
   .skills-textbox{
@@ -732,8 +738,9 @@ footer a{
   }
 
   .skill-logo{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100px;
   }
 
   .projects{
@@ -744,12 +751,14 @@ footer a{
   .projects h2{
     position: static;
     align-self: center;
+    font-size: 50px;
   }
 
   .project-card{
     align-self: center;
     width: 70%;
     height: auto;
+    margin-bottom: 5%;
   }
 
   h3{
@@ -776,12 +785,14 @@ footer a{
   .references h2{
     position: static;
     align-self: center;
+    font-size: 50px;
   }
 
   .reference-card{
     align-self: center;
     width: 70%;
     height: auto;
+    margin-bottom: 5%;
   }
 
   .references img{
@@ -792,9 +803,15 @@ footer a{
     margin-bottom: 20px;
   }
 
+.contact h2{
+  font-size: 50px;
+}
+
   .contact-box{
     align-self: center;
     width: 70%;
+    height: auto;
+    margin-top: 15%;
   }
 
   .field{
@@ -807,6 +824,10 @@ footer a{
 
   .form-button{
     padding: 0.6em 1.5em;
+  }
+
+  .thank-you h2{
+    font-size: 50px;
   }
 
   footer{
@@ -824,5 +845,15 @@ footer a{
   }
   #weather-data{
     margin-right: 0px;
+  }
+}
+
+@media (max-width: 375px){
+  h1{
+    font-size: 95px;
+  }
+
+  .skills h2{
+    font-size: 45px;
   }
 }
