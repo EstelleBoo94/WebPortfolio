@@ -716,6 +716,10 @@ footer a{
   .nav-items{
     display: none;
   }
+  .menu{
+    width: auto;
+    padding-right: 20%;
+  }
 
   header{
     flex-direction: column;
@@ -881,6 +885,7 @@ footer a{
 
   footer{
     gap: 0px;
+    height: auto;
   }
   .footer-links{
     margin-left: 0px;
