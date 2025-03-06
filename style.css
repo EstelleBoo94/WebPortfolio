@@ -721,6 +721,10 @@ footer a{
     padding-right: 20%;
   }
 
+  nav li:hover{
+    background-color: initial;
+  }
+
   header{
     flex-direction: column;
   }
@@ -896,6 +900,7 @@ footer a{
   footer{
     flex-direction: column;
     height: auto;
+    padding: 3%;
   }
   #weather-data{
     margin-right: 0px;
@@ -913,6 +918,7 @@ footer a{
     margin: 0px;
     left: 10px;
   }
+
 
   h1{
     font-size: 75px;
