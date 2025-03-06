@@ -110,7 +110,7 @@ nav img{
 header{
     display: flex;
     position: relative;
-    background-image: url(images/HeaderBackground.jpg);
+    background-image: url(images/headerBackground.jpg);
     height: 100vh;
     background-size: cover;
     z-index: 0;
